@@ -6,7 +6,7 @@ const userModel = require("./models/user")
 const app=express()
 app.use(cors())
 app.use(express.json())
-mongoose.connect("")
+mongoose.connect("mongodb+srv://nimmyroz:roz206@cluster0.svkepzi.mongodb.net/blogdb?retryWrites=true&w=majority&appName=Cluster0")
 
 app.post("/userSignup",(req,res)=>{
     let input=req.body
